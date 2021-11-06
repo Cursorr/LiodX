@@ -17,6 +17,5 @@ install:
 	copy .\liodx.exe C:\Users\$(USERNAME)\AppData\Local\Microsoft\WindowsApps
 
 clean:
-	rm *.exe
-	rm *.o
-	rm src\*.o
+	del *.o
+	del src\*.o
