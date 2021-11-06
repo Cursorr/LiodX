@@ -13,11 +13,15 @@ typedef struct LexerStructure {
 
 lexer_S* initLexer(char* sCode);
 
-lexer_S* getNextToken(lexer_S* lexer);
+token_S* getNextToken(lexer_S* lexer);
 
-lexer_S* collectStrings(lexer_S* lexer);
+token_S* collectStrings(lexer_S* lexer);
 
-void advance(lexer_S* lexer);
+token_S* collectIds(lexer_S* lexer);
+
+token_S* advanceWithToken(lexer_S* lexern, token_S* token);
+
+void advanceChar(lexer_S* lexer);
 
 void skipSpaces(lexer_S* lexer);
 
