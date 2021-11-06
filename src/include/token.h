@@ -15,6 +15,6 @@ typedef struct TokenStructure {
 
 } token_S;
 
-token_S initToken(int type, char* value);
+token_S* initToken(int type, char* value);
 
 #endif
